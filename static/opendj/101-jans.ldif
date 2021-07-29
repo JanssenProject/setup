@@ -1599,6 +1599,24 @@ attributeTypes: ( 1.3.6.1.4.1.48710.1.3.277 NAME 'jansTertiaryKeyValue'
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   X-ORIGIN 'Jans created attribute' )
+attributeTypes: ( 1.3.6.1.4.1.48710.1.3.278 NAME 'jansAuthSignedRespAlg'
+  DESC 'jans Authentication Signed Response Alg'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-ORIGIN 'Jans created attribute' )
+attributeTypes: ( 1.3.6.1.4.1.48710.1.3.279 NAME 'jansAuthEncRespAlg'
+  DESC 'jans Authentication Encrypted Response Alg'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  X-ORIGIN 'Jans created attribute' )
+  attributeTypes: ( 1.3.6.1.4.1.48710.1.3.280 NAME 'jansAuthEncRespEnc'
+    DESC 'jans Authentication Encrypted Response Enc'
+    EQUALITY caseIgnoreMatch
+    SUBSTR caseIgnoreSubstringsMatch
+    SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+    X-ORIGIN 'Jans created attribute' )
 objectClasses: ( 1.3.6.1.4.1.48710.1.4.1 NAME 'jansPairwiseIdentifier'
   SUP ( top )
   STRUCTURAL
@@ -1651,7 +1669,7 @@ objectClasses: ( 1.3.6.1.4.1.48710.1.4.9 NAME 'jansClnt'
   SUP ( top )
   STRUCTURAL
   MUST ( objectclass )
-  MAY ( displayName $ description $ inum $ jansAppTyp $ jansClntIdIssuedAt $ jansClntSecret $ jansClntSecretExpAt $ exp $ del $ jansClntURI $ jansContact $ jansDefAcrValues $ jansDefMaxAge $ jansGrantTyp $ jansIdTknEncRespAlg $ jansIdTknEncRespEnc $ jansIdTknSignedRespAlg $ jansInitiateLoginURI $ jansJwksURI $ jansJwks $ jansLogoURI $ jansPolicyURI $ jansPostLogoutRedirectURI $ jansRedirectURI $ jansRegistrationAccessTkn $ jansReqObjSigAlg $ jansReqObjEncAlg $ jansReqObjEncEnc $ jansReqURI $ jansRequireAuthTime $ jansRespTyp $ jansScope $ jansClaim $ jansSectorIdentifierURI $ jansSignedRespAlg $ jansSubjectTyp $ jansTknEndpointAuthMethod $ jansTknEndpointAuthSigAlg $ jansTosURI $ jansTrustedClnt $ jansUsrInfEncRespAlg $ jansUsrInfEncRespEnc $ jansExtraConf $ jansClaimRedirectURI $ jansLastAccessTime $ jansLastLogonTime $ jansPersistClntAuthzs $ jansInclClaimsInIdTkn $ jansRefreshTknLife $ jansDisabled $ jansLogoutURI $ jansLogoutSessRequired $ jansdId $ jansAuthorizedOrigins $ tknBndCnf $ jansAccessTknAsJwt $ jansAccessTknSigAlg $ jansAccessTknLife $ jansSoftId $ jansSoftVer $ jansSoftStatement $ jansRptAsJwt $ jansAttrs $ jansBackchannelTknDeliveryMode $ jansBackchannelClntNotificationEndpoint $ jansBackchannelAuthnReqSigAlg $ jansBackchannelUsrCodeParameter )
+  MAY ( displayName $ description $ inum $ jansAppTyp $ jansClntIdIssuedAt $ jansClntSecret $ jansClntSecretExpAt $ exp $ del $ jansClntURI $ jansContact $ jansDefAcrValues $ jansDefMaxAge $ jansGrantTyp $ jansIdTknEncRespAlg $ jansIdTknEncRespEnc $ jansIdTknSignedRespAlg $ jansInitiateLoginURI $ jansJwksURI $ jansJwks $ jansLogoURI $ jansPolicyURI $ jansPostLogoutRedirectURI $ jansRedirectURI $ jansRegistrationAccessTkn $ jansReqObjSigAlg $ jansReqObjEncAlg $ jansReqObjEncEnc $ jansReqURI $ jansRequireAuthTime $ jansRespTyp $ jansScope $ jansClaim $ jansSectorIdentifierURI $ jansSignedRespAlg $ jansSubjectTyp $ jansTknEndpointAuthMethod $ jansTknEndpointAuthSigAlg $ jansTosURI $ jansTrustedClnt $ jansUsrInfEncRespAlg $ jansUsrInfEncRespEnc $ jansExtraConf $ jansClaimRedirectURI $ jansLastAccessTime $ jansLastLogonTime $ jansPersistClntAuthzs $ jansInclClaimsInIdTkn $ jansRefreshTknLife $ jansDisabled $ jansLogoutURI $ jansLogoutSessRequired $ jansdId $ jansAuthorizedOrigins $ tknBndCnf $ jansAccessTknAsJwt $ jansAccessTknSigAlg $ jansAccessTknLife $ jansSoftId $ jansSoftVer $ jansSoftStatement $ jansRptAsJwt $ jansAttrs $ jansBackchannelTknDeliveryMode $ jansBackchannelClntNotificationEndpoint $ jansBackchannelAuthnReqSigAlg $ jansBackchannelUsrCodeParameter $ jansAuthSignedRespAlg $ jansAuthEncRespAlg $ jansAuthEncRespEnc )
   X-ORIGIN 'Jans created objectclass' )
 objectClasses: ( 1.3.6.1.4.1.48710.1.4.10 NAME 'jansScope'
   SUP ( top )

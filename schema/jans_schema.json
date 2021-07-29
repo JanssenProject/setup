@@ -632,6 +632,39 @@
       "x_origin": "Jans created attribute"
     },
     {
+      "desc": "jans Authentication Signed Response Alg",
+      "equality": "caseIgnoreMatch",
+      "names": [
+        "jansAuthSignedRespAlg"
+      ],
+      "oid": "jansAttr",
+      "substr": "caseIgnoreSubstringsMatch",
+      "syntax": "1.3.6.1.4.1.1466.115.121.1.15",
+      "x_origin": "Jans created attribute"
+    },
+    {
+      "desc": "jans Authentication Encrypted Response Alg",
+      "equality": "caseIgnoreMatch",
+      "names": [
+        "jansAuthEncRespAlg"
+      ],
+      "oid": "jansAttr",
+      "substr": "caseIgnoreSubstringsMatch",
+      "syntax": "1.3.6.1.4.1.1466.115.121.1.15",
+      "x_origin": "Jans created attribute"
+    },
+    {
+      "desc": "jans Authentication Encrypted Response Enc",
+      "equality": "caseIgnoreMatch",
+      "names": [
+        "jansAuthEncRespEnc"
+      ],
+      "oid": "jansAttr",
+      "substr": "caseIgnoreSubstringsMatch",
+      "syntax": "1.3.6.1.4.1.1466.115.121.1.15",
+      "x_origin": "Jans created attribute"
+    },
+    {
       "desc": "jans ID Tkn Enc Resp Alg",
       "equality": "caseIgnoreMatch",
       "names": [
@@ -3358,6 +3391,9 @@
         "jansDefAcrValues",
         "jansDefMaxAge",
         "jansGrantTyp",
+        "jansAuthSignedRespAlg",
+        "jansAuthEncRespAlg",
+        "jansAuthEncRespEnc",
         "jansIdTknEncRespAlg",
         "jansIdTknEncRespEnc",
         "jansIdTknSignedRespAlg",
